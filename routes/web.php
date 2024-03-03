@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('home',['title' => "Home"]);
 });
 Route::get('/posts', [postController::class, 'index']);
-Route::get('/posts/{slug}', [postController::class, 'show'] );
+Route::get('/posts/{post}', [postController::class, 'show'] );
